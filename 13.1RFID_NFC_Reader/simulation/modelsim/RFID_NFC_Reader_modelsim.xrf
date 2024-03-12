@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1RFID_NFC_Reader/RFID_NFC_Reader.vhd
+source_file = 1, C:/altera/13.1RFID_NFC_Reader/db/RFID_NFC_Reader.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = RFID_NFC_Reader
+instance = comp, \valid_identification~output\, valid_identification~output, RFID_NFC_Reader, 1
+instance = comp, \alarm~output\, alarm~output, RFID_NFC_Reader, 1
+instance = comp, \clk~input\, clk~input, RFID_NFC_Reader, 1
+instance = comp, \reset~input\, reset~input, RFID_NFC_Reader, 1
+instance = comp, \vehicle_detected~input\, vehicle_detected~input, RFID_NFC_Reader, 1

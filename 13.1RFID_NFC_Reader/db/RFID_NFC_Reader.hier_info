@@ -1,0 +1,8 @@
+|RFID_NFC_Reader
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+vehicle_detected => ~NO_FANOUT~
+valid_identification <= <GND>
+alarm <= <GND>
+
+

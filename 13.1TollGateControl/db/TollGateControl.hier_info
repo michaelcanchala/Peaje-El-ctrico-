@@ -1,0 +1,11 @@
+|TollGateControl
+clk => gate_open.CLK
+reset => gate_open.ACLR
+vehicle_detected => process_0.IN0
+vehicle_detected => process_0.IN0
+valid_identification => process_0.IN1
+valid_identification => process_0.IN1
+barrier_control <= gate_open.DB_MAX_OUTPUT_PORT_TYPE
+gate_control <= gate_open.DB_MAX_OUTPUT_PORT_TYPE
+
+

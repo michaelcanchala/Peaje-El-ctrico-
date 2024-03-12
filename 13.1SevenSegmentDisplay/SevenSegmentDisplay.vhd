@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity SevenSegmentDisplay is
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           time_passed : in STD_LOGIC_VECTOR(3 downto 0); -- Tiempo de paso (en segundos)
+           vehicles_passed : in STD_LOGIC_VECTOR(3 downto 0); -- Número de vehículos que han pasado
+           segment_output : out STD_LOGIC_VECTOR(6 downto 0) -- Salida para el display de 7 segmentos
+         );
+end SevenSegmentDisplay;
+
+
+architecture Behavioral of SevenSegmentDisplay is
+    signal display_value : STD_LOGIC_VECTOR(6 downto 0); -- Valor a mostrar en el display
+
+    -- Tabla de decodificación de 7 segmentos
+    constant segment_table : STD_LOGIC_VECTOR(15 downto 0) := "0000001", -- 0
+                                                             "1001111", -- 1
+                                                             "0010010", -- 2
+                                                             "0000110", -- 3
+                                                             "1001100", -- 4
+                                                             "0100100", -- 5
+                                                             "0100000", -- 6
+                                                             "0001111", -- 7
+                                                             "0000000", -- 8
+                                                             "0000100", -- 9
+                                                             "1111111", -- Error (E)
+                                                             "0111111", -- r (r)
+                                                             "0111101", -- o (o)
+                                                             "1111100", -- r (r)
+                                                             "1011111", -- a (a)
+                                                             "1110111";  -- L (L)
+
+begin
+    process(clk, reset)
+    begin
+        if reset = '1' then
+            display_value <= "1111111"; -- Apagar el display en caso de reset
+        elsif rising_edge(clk) then
+            -- Lógica para mostrar el tiempo de paso y el número de vehículos en el display
+            if to_integer(unsigned(time_passed)) <= 9 then
+                display_value <= segment_table(to_integer(unsigned(time_passed)));
+            else
+                display_value <= segment_table(10); -- Mostrar 'E' en caso de tiempo mayor a 9 segundos
+            end if;
+        end if;
+    end process;
+    segment_output <= display_value;
+
+end Behavioral;
+
+
+

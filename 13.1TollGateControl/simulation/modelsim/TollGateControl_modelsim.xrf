@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1TollGateControl/TollGateControl.vhd
+source_file = 1, C:/altera/13.1TollGateControl/db/TollGateControl.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = TollGateControl
+instance = comp, \barrier_control~output\, barrier_control~output, TollGateControl, 1
+instance = comp, \gate_control~output\, gate_control~output, TollGateControl, 1
+instance = comp, \clk~input\, clk~input, TollGateControl, 1
+instance = comp, \vehicle_detected~input\, vehicle_detected~input, TollGateControl, 1
+instance = comp, \valid_identification~input\, valid_identification~input, TollGateControl, 1
+instance = comp, \gate_open~0\, gate_open~0, TollGateControl, 1
+instance = comp, \reset~input\, reset~input, TollGateControl, 1

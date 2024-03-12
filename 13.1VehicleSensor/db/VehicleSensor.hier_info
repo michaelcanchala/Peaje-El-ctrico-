@@ -1,0 +1,6 @@
+|VehicleSensor
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+vehicle_detected <= <GND>
+
+

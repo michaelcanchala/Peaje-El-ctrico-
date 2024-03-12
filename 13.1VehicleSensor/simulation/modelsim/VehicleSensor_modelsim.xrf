@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1VehicleSensor/VehicleSensor.vhd
+source_file = 1, C:/altera/13.1VehicleSensor/db/VehicleSensor.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = VehicleSensor
+instance = comp, \vehicle_detected~output\, vehicle_detected~output, VehicleSensor, 1
+instance = comp, \clk~input\, clk~input, VehicleSensor, 1
+instance = comp, \reset~input\, reset~input, VehicleSensor, 1

@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1Barrera/Barrera.vhd
+source_file = 1, C:/altera/13.1Barrera/db/Barrera.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Barrera
+instance = comp, \barrera_control~output\, barrera_control~output, Barrera, 1
+instance = comp, \semaforo_in[0]~input\, semaforo_in[0]~input, Barrera, 1
+instance = comp, \reset~input\, reset~input, Barrera, 1
+instance = comp, \semaforo_in[1]~input\, semaforo_in[1]~input, Barrera, 1
+instance = comp, \barrera_control~0\, barrera_control~0, Barrera, 1
+instance = comp, \clk~input\, clk~input, Barrera, 1

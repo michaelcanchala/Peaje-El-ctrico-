@@ -1,0 +1,8 @@
+|Barrera
+clk => ~NO_FANOUT~
+reset => barrera_control.OUTPUTSELECT
+semaforo_in[0] => Equal0.IN3
+semaforo_in[1] => Equal0.IN2
+barrera_control <= barrera_control.DB_MAX_OUTPUT_PORT_TYPE
+
+
