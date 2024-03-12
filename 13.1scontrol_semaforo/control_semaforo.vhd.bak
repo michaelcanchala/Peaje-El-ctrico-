@@ -1,0 +1,40 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity control_semaforo is
+    Port ( clk : in STD_LOGIC;
+           reset : in STD_LOGIC;
+           luz_verde : out STD_LOGIC;
+           luz_roja : out STD_LOGIC);
+end control_semaforo;
+
+architecture arch_control_semaforo of control_semaforo is
+    type estado_semáforo is (verde, rojo);
+    signal estado_actual, próximo_estado : estado_semáforo;
+begin
+
+    proceso_control : process(clk, reset)
+    begin
+        if reset = '1' then
+            estado_actual <= verde;
+        elsif rising_edge(clk) then
+            estado_actual <= próximo_estado;
+        end if;
+    end process proceso_control;
+
+    proceso_cambio_estado : process(estado_actual)
+    begin
+        case estado_actual is
+            when verde =>
+                próximo_estado <= rojo;
+            when rojo =>
+                próximo_estado <= verde;
+            when others =>
+                próximo_estado <= verde; -- Estado inicial
+        end case;
+    end process proceso_cambio_estado;
+
+    luz_verde <= '1' when estado_actual = verde else '0';
+    luz_roja <= '1' when estado_actual = rojo else '0';
+
+end arch_control_semaforo;

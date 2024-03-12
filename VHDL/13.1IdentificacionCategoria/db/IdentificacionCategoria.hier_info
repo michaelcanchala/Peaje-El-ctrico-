@@ -1,0 +1,15 @@
+|IdentificacionCategoria
+tag_id[0] => ~NO_FANOUT~
+tag_id[1] => ~NO_FANOUT~
+tag_id[2] => ~NO_FANOUT~
+tag_id[3] => Mux0.IN5
+tag_id[3] => Mux1.IN5
+tag_id[3] => Mux2.IN5
+tag_id[4] => Mux0.IN4
+tag_id[4] => Mux1.IN4
+tag_id[4] => Mux2.IN4
+categoria[0] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+categoria[1] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+categoria[2] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

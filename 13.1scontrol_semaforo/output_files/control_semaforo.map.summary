@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Mar 12 17:50:46 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Revision Name : control_semaforo
+Top-level Entity Name : control_semaforo
+Family : Cyclone III
+Total logic elements : 35
+    Total combinational functions : 34
+    Dedicated logic registers : 28
+Total registers : 28
+Total pins : 7
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1ContadorCarrosPeaje\simulation\qsim
+vContadorCarrosPeaje
+Z1 IzQo]=`]4m@h=lH@C`1OI93
+Z2 VNbLYFmDO6Igc0c?MeZKlJ0
+Z3 dC:\altera\13.1ContadorCarrosPeaje\simulation\qsim
+Z4 w1710281608
+Z5 8ContadorCarrosPeaje.vo
+Z6 FContadorCarrosPeaje.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@contador@carros@peaje
+!i10b 1
+Z10 !s100 haXhk]OL7`jgHHnGL9LB01
+!s85 0
+Z11 !s108 1710281610.653000
+Z12 !s107 ContadorCarrosPeaje.vo|
+Z13 !s90 -work|work|ContadorCarrosPeaje.vo|
+!s101 -O0
+vContadorCarrosPeaje_vlg_check_tst
+!i10b 1
+!s100 DU:ZNH25CWkLb2I06IJ3d1
+ICM2]jYKT9OcdohREMBPoo3
+VkL]gnlc3IPTGC<[HO>zEL3
+R3
+Z14 w1710281607
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1710281610.764000
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+n@contador@carros@peaje_vlg_check_tst
+vContadorCarrosPeaje_vlg_sample_tst
+!i10b 1
+!s100 XFdzzbBMd:To2S=C8eHem0
+IzQiSZQQ7]71^VKg5j56T02
+V0k6Ikm`P1FoXVQT?Vg2k>3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@contador@carros@peaje_vlg_sample_tst
+vContadorCarrosPeaje_vlg_vec_tst
+!i10b 1
+!s100 `j;^iaIhGz4fOoiUkE_go3
+I]:ZkaAmIM1?coE^FC^QVU1
+VLNCc4MBCzM;z=TieTL^V61
+R3
+R14
+R15
+R16
+L0 425
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@contador@carros@peaje_vlg_vec_tst
